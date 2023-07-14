@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="aside-content">
+          <h1>Js</h1>
+          <h3>OOP</h3>
+        </div>
+      </aside>
+      <main>
+        <div class="loader"></div>
+        <div class="scoreDiv">
+          <h1>Your Score</h1>
+          <h1 class="score"></h1>
+        </div>
+        <div id="main-content" class="main-content">
+          <h1>Quiz</h1>
+          <hr />
+          <div class="question-div">
+            <p id="questions" class="questions">
+              Which one is not an object oriented programming languages?
+            </p>
+          </div>
+          <div id="options" class="options" name="div">
+            <button id="option1" class="button">Java</button>
+            <button id="option2" class="button">C#</button>
+            <button id="option3" class="button">C++</button>
+            <button id="option4" class="button">C</button>
+          </div>
+          <hr />
+          <div class="counts">
+            <div id="progress" class="counts-content">Question 1 of 10</div>
+          </div>
+        </div>
+        <audio id="right" src="sounds/right.mp3"></audio>
+        <audio id="endGame" src="sounds/endGame.mp3"></audio>
+        <audio id="wrong" src="sounds/wrong.mp3"></audio>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
